@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LD Paint</title>
+</head>
+<body>
+  <canvas id="paintCanvas" width="800" height="600"></canvas>
+  <br>
+  <button onclick="changeBrushSize(5)">Small Brush</button>
+  <button onclick="changeBrushSize(10)">Big Brush</button>
+  <button onclick="clearCanvas()">Clear Canvas</button>
+  <input type="color" id="colorPicker" onchange="changeColor(event)">
+  <button onclick="saveImage()">Save Image</button>
+</body>
+<style>
+    canvas {
+      border: 2px solid #000;
+    }
+</style>
+<script src="./script.js"></script>
+</html>
+
+
