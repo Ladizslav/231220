@@ -15,7 +15,7 @@
       ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
 
-    function saveImage() {
+    function UlozitObrazek() {
       const dataURL = canvas.toDataURL();
       const a = document.createElement('a');
       a.href = dataURL;
