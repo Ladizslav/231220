@@ -1,17 +1,17 @@
-const canvas = document.getElementById('paintCanvas');
+    const canvas = document.getElementById('paintCanvas');
     const ctx = canvas.getContext('2d');
     let brushSize = 5;
     let currentColor = '#000';
 
-    function changeBrushSize(size) {
+    function ZmenaVelikosti(size) {
       brushSize = size;
     }
 
-    function changeColor(event) {
+    function ZmenaBarvy(event) {
       currentColor = event.target.value;
     }
-
-    function clearCanvas() {
+ 
+    function Cistka() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
 
@@ -19,7 +19,7 @@ const canvas = document.getElementById('paintCanvas');
       const dataURL = canvas.toDataURL();
       const a = document.createElement('a');
       a.href = dataURL;
-      a.download = 'my_painting.png';
+      a.download = 'painting.png';
       a.click();
     }
 

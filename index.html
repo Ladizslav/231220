@@ -8,11 +8,12 @@
 <body>
   <canvas id="paintCanvas" width="800" height="600"></canvas>
   <br>
-  <button onclick="changeBrushSize(5)">Small Brush</button>
-  <button onclick="changeBrushSize(10)">Big Brush</button>
-  <button onclick="clearCanvas()">Clear Canvas</button>
-  <input type="color" id="colorPicker" onchange="changeColor(event)">
-  <button onclick="saveImage()">Save Image</button>
+  <button onclick="ZmenaVelikosti(5)">Maly stetec</button>
+  <button onclick="ZmenaVelikosti(7,5)">Stredni stetec</button>
+  <button onclick="ZmenaVelikosti(10)">Velky stetec</button>
+  <button onclick="Cistka()">Vymazat canvas</button>
+  <input type="color" id="colorPicker" onchange="ZmenaBarvy(event)">
+  <button onclick="saveImage()">Ulozit obrazek</button>
 </body>
 <style>
     canvas {
